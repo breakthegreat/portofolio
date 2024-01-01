@@ -64,7 +64,9 @@ p {
     transition: all 0.4s;
 }
 
-
+#chevron {
+    color: black;
+}
 
 
 .to-top.active {
