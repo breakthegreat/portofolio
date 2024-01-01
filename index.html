@@ -129,7 +129,7 @@
 
 
         <div class="container" id="about">
-            <div class="row row-cols-1  gy-2">
+            <div class="row row-cols-1">
 
                 <div class="col">
                     <div class="title">
@@ -147,11 +147,15 @@
                     </div>
                 </div>
 
-
+                <a href="#" class="to-top">
+                    <i class="fas fa-chevron-up"></i>
+                </a>
     </main>
     <footer>
         <!-- place footer here -->
     </footer>
+
+    <script src="https://kit.fontawesome.com/4047c8270b.js" crossorigin="anonymous"></script>
     <script>
         // Smooth scrolling function
         function scrollToSection(sectionId) {
@@ -179,6 +183,20 @@
         document.getElementById('aboutBt').addEventListener('click', function () {
             scrollToSection('about'); // Replace 'about' with the ID of the section you want to scroll to
         });
+
+        const toTop = document.querySelector(".to-top");
+
+        window.addEventListener("scroll", () => {
+            if (window.pageYOffset > 150) {
+                toTop.classList.add("active");
+            }
+            else {
+                toTop.classList.remove("active");
+            }
+        });
+
+
+
     </script>
 </body>
 

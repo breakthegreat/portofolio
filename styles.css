@@ -1,7 +1,6 @@
 /* body {
     margin-top: 40px;
-    /* This margin just makes the text easier to read. You can remove it if you want since it can mess with your other styles. */
-}
+} 
 
 body::before {
     content: "XS";
@@ -12,8 +11,8 @@ body::before {
     top: 0;
     right: 0;
 }
+ */
 
-*/
 
 /* This box class is purely used for explaining how the bootstrap grid system works. */
 .box {
@@ -39,8 +38,7 @@ p {
 }
 
 #projects {
-    padding-left: 10%;
-    padding-right: 10%;
+
     padding-bottom: 100vh;
 
 
@@ -50,6 +48,33 @@ p {
     padding-bottom: calc(100vh - 50vh);
 }
 
+
+.to-top {
+
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 0px;
+    right: 46.85%;
+
+
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+
+}
+
+
+
+
+.to-top.active {
+
+    bottom: 0px;
+    pointer-events: auto;
+    opacity: 1;
+
+
+}
 
 
 
