@@ -61,6 +61,7 @@ p {
     opacity: 0;
     pointer-events: none;
     animation: initialBounce 2s infinite;
+    transition: all 0.4s;
 }
 
 
