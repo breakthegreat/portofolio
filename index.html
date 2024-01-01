@@ -82,50 +82,70 @@
         </div>
 
 
-        <div class="row row-cols-2 row-cols-lg-4 mt-4 gy-4" id="projects">
+        <div class="row row-cols-2 row-cols-lg-4 mx-1 gy-4" id="projects">
             <div class="col">
-                <div class="card text-bg-primary">
-                    <div class="card-body">Project 1
+                <div class="card ">
+                    <div class="card-body text-bg-primary">Project 1
                     </div>
+                    <div class="card-body p-5">Description
+                    </div>
+
                 </div>
 
             </div>
             <div class="col">
-                <div class="card text-bg-primary">
-                    <div class="card-body">Project 2
+                <div class="card ">
+                    <div class="card-body text-bg-primary">Project 2
                     </div>
+                    <div class="card-body p-5">Description
+                    </div>
+
                 </div>
 
             </div>
             <div class="col">
-                <div class="card text-bg-primary">
-                    <div class="card-body">Project 3
+                <div class="card ">
+                    <div class="card-body text-bg-primary">Project 3
                     </div>
+                    <div class="card-body p-5">Description
+                    </div>
+
                 </div>
 
             </div>
             <div class="col">
-                <div class="card text-bg-primary">
-                    <div class="card-body">Project 4
+                <div class="card ">
+                    <div class="card-body text-bg-primary">Project 4
                     </div>
+                    <div class="card-body p-5">Description
+                    </div>
+
                 </div>
 
             </div>
-
 
         </div>
 
 
 
         <div class="container" id="about">
-            <div class="row">
+            <div class="row row-cols-1  gy-2">
+
                 <div class="col">
-                    test
+                    <div class="title">
+                        About me
+                    </div>
                 </div>
 
-            </div>
+                <div class="col">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero minus alias enim ipsa earum
+                            dolor asperiores illum fuga est blanditiis! Ipsa incidunt ipsam molestias non debitis sed
+                            sit, autem ex!
 
-        </div>
+                        </p>
+                    </div>
+                </div>
 
 
     </main>
@@ -135,10 +155,19 @@
     <script>
         // Smooth scrolling function
         function scrollToSection(sectionId) {
-            document.getElementById(sectionId).scrollIntoView({
+            // Get the target section element
+            var targetSection = document.getElementById(sectionId);
+
+            // Calculate the target position as current position - 50vh
+            var targetPosition = targetSection.getBoundingClientRect().top - (window.innerHeight * 0.25);
+
+            // Scroll into view with smooth behavior
+            window.scrollTo({
+                top: targetPosition,
                 behavior: 'smooth'
             });
         }
+
 
         // Example of triggering the scroll function
         document.getElementById('homeBt').addEventListener('click', function () {
