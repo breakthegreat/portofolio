@@ -32,6 +32,9 @@ p {
 }
 
 #home {
+
+    margin-top: 25vh;
+
     padding-bottom: 100vh;
 }
 
@@ -42,7 +45,7 @@ p {
 }
 
 #about {
-    padding-bottom: calc(100vh - 20px);
+    padding-bottom: calc(100vh - 50vh);
 }
 
 
