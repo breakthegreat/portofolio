@@ -6,6 +6,7 @@ body {
 
 .title {
     font-size: 3rem;
+    padding-left: 48px;
 }
 
 p {
@@ -14,14 +15,14 @@ p {
 
 #home {
 
-    margin-top: 25vh;
+    margin-top: 10vh;
 
-    margin-bottom: 75vh;
+    margin-bottom: 40vh;
 }
 
 #projects {
 
-    margin-bottom: 65vh;
+    margin-bottom: 40vh;
 
 
 }
@@ -57,8 +58,13 @@ p {
 .about {
     line-height: 2;
     padding: 24px;
+    padding-bottom: 0;
+}
 
-
+.skills {
+    padding: 24px;
+    padding-top: 0;
+    line-height: 3;
 }
 
 #chevron {
