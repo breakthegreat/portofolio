@@ -1,26 +1,8 @@
-/* body {
-    margin-top: 40px;
-} 
-
-body::before {
-    content: "XS";
-    color: red;
-    font-size: 2rem;
-    font-weight: bold;
-    position: fixed;
-    top: 0;
-    right: 0;
+body {
+    background-color: #f8f8f8;
 }
- */
 
 
-/* This box class is purely used for explaining how the bootstrap grid system works. */
-.box {
-    background-color: lightblue;
-    border: 1px solid blue;
-    min-height: 50px;
-    font-size: 2rem;
-}
 
 .title {
     font-size: 3rem;
@@ -34,18 +16,18 @@ p {
 
     margin-top: 25vh;
 
-    padding-bottom: 100vh;
+    margin-bottom: 75vh;
 }
 
 #projects {
 
-    padding-bottom: 100vh;
+    margin-bottom: 65vh;
 
 
 }
 
 #about {
-    padding-bottom: calc(100vh - 50vh);
+    margin-bottom: calc(100vh - 50vh);
 }
 
 
@@ -62,11 +44,27 @@ p {
     pointer-events: none;
     animation: initialBounce 2s infinite;
     transition: all 0.4s;
+    transition: left 0s 0s;
+}
+
+.welcome {
+    text-indent: 50px;
+    letter-spacing: 3px;
+    line-height: 2.3;
+    padding: 48px;
+}
+
+.about {
+    line-height: 2;
+    padding: 24px;
+
+
 }
 
 #chevron {
     color: black;
 }
+
 
 
 .to-top.active {
