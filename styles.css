@@ -109,32 +109,18 @@ p {
 
 
 
-/* @media (min-width: 576px) {
-    body::before {
-        content: "SM";
+@media (max-width: 600px) {
+    #home {
+        margin-top: 5vh;
+        margin-bottom: 10vh;
+
+    }
+
+    #projects {
+        margin-bottom: 10vh;
+    }
+
+    #about {
+        margin-bottom: 10vh;
     }
 }
-
-@media (min-width: 768px) {
-    body::before {
-        content: "MD";
-    }
-}
-
-@media (min-width: 992px) {
-    body::before {
-        content: "LG";
-    }
-}
-
-@media (min-width: 1200px) {
-    body::before {
-        content: "XL";
-    }
-}
-
-@media (min-width: 1400px) {
-    body::before {
-        content: "XXL";
-    }
-} */
