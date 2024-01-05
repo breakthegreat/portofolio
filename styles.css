@@ -1,8 +1,27 @@
 body {
     background-color: #f8f8f8;
+
 }
 
+.mainPage {
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -50px, 0);
+
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
 
 .title {
     font-size: 3rem;
