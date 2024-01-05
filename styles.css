@@ -120,7 +120,7 @@ p {
     }
 }
 
-#to.to-top.active:hover {
+.to-top.active:hover {
 
     animation: none;
     /* Stop the initial bouncing animation on hover */
