@@ -36,18 +36,18 @@ p {
 
     margin-top: 10vh;
 
-    margin-bottom: 40vh;
+   
 }
 
 #projects {
 
-    margin-bottom: 40vh;
+    margin-bottom: 10vh;
 
 
 }
 
 #about {
-    margin-bottom: calc(100vh - 50vh);
+    margin-bottom: calc(100vh - 80vh);
 }
 
 
