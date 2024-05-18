@@ -8,21 +8,13 @@ body {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+.card{
+    text-decoration: none;
 
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-        transform: translate3d(0, -50px, 0);
-
-
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
 }
-
+.card:hover {
+    cursor: pointer;
+}
 .title {
     font-size: 3rem;
     padding-left: 48px;
@@ -101,6 +93,41 @@ p {
 
 }
 
+
+
+.to-top.active:hover {
+
+    animation: none;
+    /* Stop the initial bouncing animation on hover */
+}
+
+.head {
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+
+.list {
+    margin-bottom: 24px;
+}
+
+@media (max-width: 600px) {
+    #home {
+        margin-top: 5vh;
+        margin-bottom: 10vh;
+
+    }
+
+    #projects {
+        margin-bottom: 10vh;
+    }
+
+    #about {
+        margin-bottom: 10vh;
+    }
+}
+
 @keyframes initialBounce {
 
     0%,
@@ -120,37 +147,16 @@ p {
     }
 }
 
-.to-top.active:hover {
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -50px, 0);
 
-    animation: none;
-    /* Stop the initial bouncing animation on hover */
-}
-
-
-
-@media (max-width: 600px) {
-    #home {
-        margin-top: 5vh;
-        margin-bottom: 10vh;
 
     }
 
-    #projects {
-        margin-bottom: 10vh;
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
     }
-
-    #about {
-        margin-bottom: 10vh;
-    }
-}
-
-.head {
-    font-size: 20px;
-    font-weight: bold;
-
-}
-
-
-.list {
-    margin-bottom: 24px;
 }
